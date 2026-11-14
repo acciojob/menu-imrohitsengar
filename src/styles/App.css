@@ -1,12 +1,117 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f1f5f8;
+  color: #102a42;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+h1 {
+  color: #102a42;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.title-underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.btn-container {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button, .filter-btn {
+  background: transparent;
+  border-color: #c59d5f;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 1px;
+  border-radius: 0.25rem;
+  color: #c59d5f;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+button:hover, .filter-btn:hover {
+  background: #c59d5f;
+  color: #ffffff;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 2rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  padding-bottom: 3rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 1.25rem;
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.photo {
+  object-fit: cover;
+  height: 150px;
+  width: 175px;
+  border: 0.25rem solid #c59d5f;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px dashed #617d98;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.item-info h4 {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.price {
+  color: #c59d5f;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.item-text {
+  color: #617d98;
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
 }
